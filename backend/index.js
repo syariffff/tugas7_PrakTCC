@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import route from "./routes/routes.js";
 import cookieParser from "cookie-parser";
-import "./model/index.js"; // <- PENTING: memicu sinkronisasi DB
+import "./models/index.js"; // <- PENTING: memicu sinkronisasi DB
 
 const app = express();
 const port = process.env.PORT || 5000;
