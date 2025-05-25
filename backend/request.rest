@@ -1,0 +1,52 @@
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "ayas",
+  "password": "123",
+  "confirm_password": "123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "ayas",
+  "password": "123"
+  
+}
+
+###
+POST http://localhost:5000/logout
+Content-Type: application/json
+
+{
+  "username": "ayas",
+  "password": "123"
+  
+}
+
+### 
+GET http://localhost:5000/token
+
+###
+GET http://localhost:5000/notes/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJheWFzIiwiaWF0IjoxNzQ4MTY1MTc2LCJleHAiOjE3NDgxNjYwNzZ9.k_cjLGIGyLvmFnYHljUIvXI9O4maOPyB4SsKSIFOijo
+
+### 
+POST http://localhost:5000/add-note
+Content-Type: application/json 
+Authorization: Bereer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJheWFzIiwiaWF0IjoxNzQ4MTY1NTMyLCJleHAiOjE3NDgxNjY0MzJ9.35_JQDsarL2YC7YuzOwOOfambQ292Kk8IrHErUCEZKE
+
+{
+"title": "Test Ubah", 
+"isi": "Ini",
+"kategori": "pendidikan"
+}
+
+### 
+DELETE http://localhost:5000/delete-note/1
+Authorization: Bereer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJheWFzIiwiaWF0IjoxNzQ4MTU4MDc2LCJleHAiOjE3NDgxNTgxMDZ9.QX3PBsNlzA2qz3mC85ZrzWZDDGZGLXDRrCrG7iq3NfU
+
