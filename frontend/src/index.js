@@ -1,9 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.js'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import RouterApp from './routes/RouterApp';
+import { AuthProvider } from './auth/AuthProvider';
+import AxiosInterceptor from './api/axiosInterceptor';
+import 'bulma/css/bulma.min.css';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <AuthProvider>
+      <AxiosInterceptor />
+      <RouterApp />
+    </AuthProvider>
+  </React.StrictMode>
+);
