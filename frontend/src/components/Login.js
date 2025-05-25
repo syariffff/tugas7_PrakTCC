@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // ✅ Import Link
 import useAuth from '../auth/useAuth';
 
 const LoginPage = () => {
@@ -69,7 +69,6 @@ const LoginPage = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
-                    
                   />
                   <span className="icon is-small is-left">
                     <i className="fas fa-lock"></i>
@@ -84,9 +83,9 @@ const LoginPage = () => {
 
             <p className="has-text-centered mt-3 is-size-7 has-text-grey-dark">
               Belum punya akun?{' '}
-              <a href="/register" className="has-text-link">
+              <Link to="/register" className="has-text-link">
                 Daftar di sini
-              </a>
+              </Link>
             </p>
           </div>
         </div>
