@@ -110,7 +110,7 @@ const RegisterPage = () => {
 
             <p className="has-text-centered mt-3 is-size-7 has-text-grey-dark">
               Sudah punya akun?{' '}
-              <a href="/login" className="has-text-link">
+              <a href="/" className="has-text-link">
                 Masuk di sini
               </a>
             </p>
