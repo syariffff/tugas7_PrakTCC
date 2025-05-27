@@ -23,7 +23,7 @@ const RegisterPage = () => {
         password,
         confirm_password: confirm,
       });
-      navigate('/login');
+      navigate('/');
     } catch (err) {
       setError(err.response?.data?.msg || 'Registrasi gagal');
     }
